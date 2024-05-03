@@ -33,7 +33,6 @@ function init() {
   const inputTxt = document.getElementById("text-to-speak");
   button.addEventListener("click", (event) => {
     event.preventDefault();
-
     const utterThis = new SpeechSynthesisUtterance(inputTxt.value);
     const selectedOption =
       voiceSelect.selectedOptions[0].getAttribute("data-name");
